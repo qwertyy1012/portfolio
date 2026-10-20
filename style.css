@@ -294,6 +294,7 @@ h2 span {
   animation: orbit-spin 45s linear infinite;
 }
 
+
 .core {
   width: 110px;
   height: 110px;
@@ -317,6 +318,24 @@ h2 span {
   border-radius: 50%;
   background: var(--gold);
 }
+
+/* PERSONAL PROFILE PHOTO */
+.profile-photo {
+  padding: 0;
+  overflow: hidden;
+  border: 3px solid var(--white);
+  background: var(--white);
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
 
 .orbit-label {
   position: absolute;
