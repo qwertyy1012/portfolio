@@ -4,162 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tricia Mae Gonzaga | Portfolio</title>
-    <!-- Google Fonts: Cormorant Garamond -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-dark: #0b0b0b;
-            --french-blue: #318CE7; /* Vibrant French Blue optimized for dark backgrounds */
-            --french-blue-light: #5ca4e9;
-            --text-muted: #8ab4f8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg-dark);
-            color: var(--french-blue);
-            font-family: 'Cormorant Garamond', serif;
-            line-height: 1.6;
-            font-size: 1.25rem;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 4rem;
-            border-bottom: 1px solid rgba(49, 140, 231, 0.2);
-            padding-bottom: 3rem;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
-
-        h1 span {
-            color: var(--french-blue);
-        }
-
-        .subtitle {
-            font-size: 1.6rem;
-            font-style: italic;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-
-        nav a {
-            color: var(--french-blue);
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--french-blue-light);
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 4rem;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(49, 140, 231, 0.3);
-            padding-bottom: 0.5rem;
-        }
-
-        p {
-            margin-bottom: 1.2rem;
-            color: #d1d1d1;
-        }
-
-        .project-card {
-            background: rgba(20, 20, 20, 0.7);
-            border: 1px solid rgba(49, 140, 231, 0.3);
-            border-radius: 8px;
-            padding: 2rem;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .project-card:hover {
-            border-color: var(--french-blue);
-            transform: translateY(-3px);
-        }
-
-        .project-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--french-blue-light);
-            margin-bottom: 1rem;
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 1.5rem;
-        }
-
-        .badge {
-            background: rgba(49, 140, 231, 0.1);
-            color: var(--french-blue-light);
-            border: 1px solid var(--french-blue);
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 5rem;
-            font-size: 1rem;
-            color: var(--text-muted);
-            border-top: 1px solid rgba(49, 140, 231, 0.2);
-            padding-top: 2rem;
-        }
-
-        @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; }
-            .container { padding: 1rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <!-- Header / Hero Section -->
         <header>
             <h1>Tricia Mae <span>Gonzaga</span></h1>
             <div class="subtitle">Computer Engineering Student / Practitioner</div>
-            <p>Welcome to my digital portfolio. Exploring the intersection of hardware, embedded systems, and innovative software solutions.</p>
+            <p id="dynamic-greeting">Welcome to my digital portfolio. Exploring the intersection of hardware, embedded systems, and innovative software solutions.</p>
             <nav>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -167,13 +23,13 @@
             </nav>
         </header>
 
-        <!-- About Section -->
+    
         <section id="about">
             <h2>About Me</h2>
             <p>Hello! I am Tricia Mae Gonzaga, a passionate Computer Engineering professional dedicated to building smart, embedded systems that solve real-world problems. I combine hardware integration with clean engineering practices to create functional and impactful technological solutions.</p>
         </section>
 
-        <!-- Projects Section -->
+ 
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="project-card">
@@ -188,18 +44,20 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+       
         <section id="contact">
             <h2>Get In Touch</h2>
             <p>I am always open to collaborating on exciting engineering projects or discussing new opportunities. Feel free to reach out via email or connect with me on professional networks.</p>
             <p><strong>Email:</strong> triciamae.gonzaga@example.com</p>
         </section>
 
-        <!-- Footer -->
+    
         <footer>
             <p>&copy; 2026 Tricia Mae Gonzaga. All Rights Reserved.</p>
         </footer>
     </div>
 
+    
+    <script src="script.js"></script>
 </body>
 </html>
